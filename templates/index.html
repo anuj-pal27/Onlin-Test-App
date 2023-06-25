@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/online .css">
+
+    <title>Online Quiz</title>
+</head>
+
+<body>
+    <section id="home">
+        <section id="content">
+            <div class="left-section">
+                <img src="/static/Lovepik_com-450092124- online test illustration in flat style vector .png" alt="">
+            </div>
+            <div class="main-section">
+                <div class="right-section"> Welcome To
+                    <br> Online Test App
+                </div>
+                {%block registration%}
+                <section id="login-register">
+                    <div class="log_rig_box">
+                        <div class="login">
+                            <button id="myButton1">LOGIN</button>
+                        </div>
+                        {%endblock%}
+
+                    </div>
+                    {%block form%}
+
+
+                    <div class="form-act">
+                        <form method="post" action="{%url 'index' %}">
+                            {%csrf_token%}
+                            <label for="username"><input type="text" name="username" placeholder="Username"
+                                    class="input-field" data-placeholder="Username"></label>
+                                  
+                            <label for="password"><input type="text" name="password" placeholder="password"
+                                    class="input-field" data-placeholder="password"></label>
+                                    {% if loginError %}
+                                    <div class="error">
+                                        {{loginError}}
+                                    </div>
+                                    {% endif %}
+                            <div class="sign-in">
+                                <input type="submit" value="login in">
+                            </div>
+                            <a href="{%url 'CandidateRegistration' %}" name="registeration">New Registeration</a>
+                            {%endblock%}
+                            
+                        </form>
+                       
+                        <!-- <div class="for_both">
+                            <div class="remember-me">
+                                <label for="checkbox"> <input type="checkbox">Remember me /</label>
+                            </div>
+    
+                            <div class="for_pass">
+                                <a href="#">Forgot password?</a>
+                            </div> -->
+
+                    </div>
+                </section>
+            </div>
+
+        </section>
+    </section>
+
+
+</body>
+<script src="/static/online-test.js"></script>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'theme.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ysabeau+SC&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Ysabeau+SC&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'theme1.css' %}">
+    <title>{%block title%}{%endblock%}</title></title>
+    
+</head>
+<body>
+    <div class="section">
+        {%block section%}{%endblock%}
+    </div>
+    <div class="main">
+        <div class="main-1"><h1>Online Testing System </h1></div>
+    </div>
+
+        <div class="top">
+            {%block top%} {%endblock%}
+            
+        </div>
+</body>
+<script>
+    // JavaScript code to capitalize the text
+    let originalTextElement = document.getElementById("originalText");
+    let originalText = originalTextElement.textContent;
+    let capitalizedText = originalText.toUpperCase();
+    originalTextElement.textContent = capitalizedText;
+  </script>
+</html>

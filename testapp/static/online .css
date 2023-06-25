@@ -1,0 +1,117 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+#content {
+    display: flex;
+    justify-content: space-around;
+
+    margin-top: 10px 0;
+}
+
+#content>div {
+    width: 45%;
+
+}
+
+.left-section img {
+    width: 100%;
+    height: 100%;
+}
+
+.right-section {
+    margin-top: 50px;
+    font-size: 3.5rem;
+    color: rgb(224 102 43 / 90%);
+    font-weight: bold;
+    font-style: italic;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.log_rig_box {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.login button {
+    padding: 6px;
+    width: 280px;
+    height: 45px;
+    border: 4px;
+    font-size: 15px;
+
+}
+
+.login button:hover {
+  background-color: #e3ebf7;
+}
+#login-register{
+    border: 2px solid #adb6c466;
+    height: 75%;
+}
+.form-act {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+.form-act input{
+    border: 2px solid rgb(203, 191, 191);
+    min-height: auto;
+    padding: .60rem .75rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width:30rem;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    font-size: medium;
+    border-radius: 4px;
+}
+.form-act input:focus{
+border: 2px solid rgb(224 102 43 / 90%);
+
+}
+
+.for_both{border: 2px solid green;
+    display: flex;
+   justify-content: center;
+   margin: 15px;
+
+}
+.for_pass{
+    margin-left: 10px;
+
+}
+.sign-in{
+    display: flex;
+    justify-content: center;
+    padding: 6px;
+    margin: 40px;
+
+}
+.sign-in input{
+    padding: 8px;
+    width: 77%;
+    background-color: #1f67dbc9;
+    cursor: pointer;
+    box-shadow: 0 4px 9px -4px #3b71ca;
+    border-radius: 0.25rem;
+   outline: none;
+   color: white;
+   font-size: medium;
+
+
+}
+.sign-in input:hover{
+    background-color: #1657c0;
+}

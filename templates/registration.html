@@ -1,0 +1,27 @@
+{%extends 'main.html' %}
+
+{%block title%}Registration status {%endblock%}
+
+{%block section%}
+<a href="{%url 'CandidateRegistration' %}">Signup</a>
+<a href="{%url 'index' %}">Log in</a>
+
+{%endblock%}
+{%block top%} 
+<!-- {% if userStatus == 1 %}
+    <div class="userStatus">
+        Sorry, username already exists, please try different username.
+
+    </div>
+{% elif userStatus == 2 %}
+    <div class="userStatus">
+        Congratulations!!, user created successfully
+        <a href="{%url 'index' %}">Login</a>
+    </div>
+{% elif userStatus == 3 %}
+    <div class="userStatus">
+        Oops!!, Improper Request
+        <a href="{%url 'CandidateRegistration'%}">Back to Registration</a>
+    </div>
+{% endif %} -->
+{%endblock%}

@@ -1,0 +1,43 @@
+{%extends 'main.html' %}
+
+{%block title%}Home Page{%endblock%}
+
+{%block section%} <a href="{%url 'home'%}">Home</a>
+<a href="{%url 'logout'%}">Log out</a>{%endblock%}
+{%block top%}
+<div class="container">
+    <div class="left-container">
+        <h1>Welcome <span id="originalText">{{request.session.name}}</span> ,</h1>
+        <h2> To Quiz Test </h2>
+    </div>
+    <div class="right-container">
+        <img src="/static/Lovepik_com-450095300-Editable flat outline design of quiz icon.png" alt="">
+    </div>
+</div>
+<div class="questions_container">
+    <div class="question_head">
+        <h1>Questions Papers</h1>
+    </div>
+
+    <div class="three_container">
+
+        <div class="button-link">
+            <a href="{%url 'testPaper'%}?n=1">Test of 1 Question</a>
+            <img src="/static/pngwing.com.png" alt="">
+        </div>
+        <div class="button-link">
+            <a href="{%url 'testPaper'%}?n=3">Test of 3 Question</a>
+            <img src="/static/pngwing.com.png" alt="">
+        </div>
+        <div class="button-link">
+            <a href="{%url 'testPaper'%}?n=5">Test of 5 Question</a>
+            <img src="/static/pngwing.com.png" alt="">
+        </div>
+       
+    </div>
+    <div class="testHistory">
+        <a href="{%url 'testHistory'%}">Test History</a>
+      </div>
+</div>
+
+{%endblock%}
